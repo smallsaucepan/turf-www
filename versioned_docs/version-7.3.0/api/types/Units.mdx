@@ -1,0 +1,26 @@
+---
+title: Units
+---
+
+import * as turf from "turf-next";
+import WindowTurfGlobal from "@site/src/components/WindowTurfGlobal";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+
+### Description
+
+Linear measurement units.
+
+⚠️ Warning. Be aware of the implications of using radian or degree units to
+measure distance. The distance represented by a degree of longitude _varies_
+depending on latitude.
+
+See [https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)
+for an illustration of this behaviour.
+
+### Definition
+
+"meters" | "metres" | "millimeters" | "millimetres" | "centimeters" | "centimetres" | "kilometers" | "kilometres" | "miles" | "nauticalmiles" | "inches" | "yards" | "feet" | "radians" | "degrees"
+
+<!-- Expose turf as global var for experimenting in the browser console -->
+
+<BrowserOnly>{() => <WindowTurfGlobal turf={turf} />}</BrowserOnly>
